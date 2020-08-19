@@ -40,7 +40,7 @@ $ts = str_replace(array('T', 'Z'), array(' ', ''), $timestamp);
 // create file to save image data
 $received_time = strtotime($ts); //unix timestamp
 $image_file_name = $received_time.".bin";
-$myfile = fopen("Image Data/"."$image_file_name", "w") or die("Unable to open file!");
+$myfile = fopen("C:\Users\admin\Desktop\Image Data\"."$image_file_name", "w") or die("Unable to open file!");
 fwrite($myfile, $image_data);
 fclose($myfile);
 
